@@ -36,10 +36,10 @@ const btnCheck = document.querySelector('.btn-check');
 userNumForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (userNum.value > randomNum) {
-        startGuessing.textContent = "📈 To high";
+        startGuessing.textContent = "📈 Too high";
         speak("Too high");
     } else if (userNum.value < randomNum) {
-        startGuessing.textContent = "📉 To low";
+        startGuessing.textContent = "📉 Too low";
         speak("Too low");
     } else {
         startGuessing.textContent = "🏆 Correct number!";
